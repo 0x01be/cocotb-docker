@@ -14,6 +14,7 @@ FROM alpine
 
 RUN apk add --no-cache --virtual cocotb-runtime-dependencies \
     python3 \
+    perl \
     libstdc++
 
 COPY --from=build /opt/cocotb/ /opt/cocotb/
